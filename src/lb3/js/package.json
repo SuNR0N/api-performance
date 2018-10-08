@@ -1,0 +1,14 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "loopback": "^3.22.3",
+    "loopback-boot": "^2.27.1",
+    "strong-error-handler": "^3.2.0"
+  }
+}
