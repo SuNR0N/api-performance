@@ -7,6 +7,30 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "Launch LoopBack 3 TS",
+      "program": "${workspaceFolder}/src/lb3/ts/dist/index.js",
+      "outFiles": [
+        "${workspaceFolder}/src/lb3/ts/dist/**/*.js"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch LoopBack 3 Babel",
+      "program": "${workspaceFolder}/src/lb3/babel/dist/index.js",
+      "outFiles": [
+        "${workspaceFolder}/src/lb3/babel/dist/**/*.js"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch LoopBack 3",
+      "program": "${workspaceFolder}/src/lb3/js/index.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "Launch Koa TS",
       "program": "${workspaceFolder}/src/koa/ts/dist/index.js",
       "outFiles": [
