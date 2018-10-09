@@ -7,6 +7,15 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "Launch LoopBack 4 TS",
+      "program": "${workspaceFolder}/src/lb4/ts/index.js",
+      "outFiles": [
+        "${workspaceFolder}/src/lb4/ts/dist/**/*.js"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "Launch LoopBack 3 TS",
       "program": "${workspaceFolder}/src/lb3/ts/dist/index.js",
       "outFiles": [
