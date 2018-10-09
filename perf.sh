@@ -29,12 +29,14 @@ echo $CURL
 
 VALUE=`echo $CURL | cut -f2 -d' '`
 TOTAL=`echo "scale=3;${TOTAL}+${VALUE}" | bc`
-sleep .01
+# sleep .01
 done
 
 AVG=`echo "scale=3; ${TOTAL}/${COUNT}" |bc`
+RPS=`echo "scale=3; ${COUNT}/${TOTAL}" |bc`
 echo "   ________________________________"
 echo
-echo "   Total Time: $TOTAL ms"
+echo "   Total Time: $TOTAL s"
 echo "   Number of Requests: $COUNT"
-echo "   Average Request Time: $AVG ms"
+echo "   Average Request Time: $AVG s"
+echo "   Requests / Second: $RPS"
