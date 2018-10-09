@@ -1,0 +1,21 @@
+{
+  "name": "ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc && cp ./config.json ./middleware.json ./dist",
+    "start": "yarn build && yarn serve",
+    "serve": "node dist/index.js"
+  },
+  "dependencies": {
+    "loopback": "^3.22.3",
+    "loopback-boot": "^2.27.1",
+    "strong-error-handler": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/loopback": "^3.2.6",
+    "@types/loopback-boot": "^2.23.4",
+    "typescript": "^3.1.1"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "initial:before": {
+    "loopback#favicon": {}
+  },
+  "initial": {},
+  "session": {},
+  "auth": {},
+  "parse": {
+    "body-parser#json": {},
+    "body-parser#urlencoded": {
+      "params": {
+        "extended": true
+      }
+    }
+  },
+  "routes": {
+    "loopback#rest": {
+      "paths": [
+        "${restApiRoot}"
+      ]
+    }
+  },
+  "files": {},
+  "final": {
+    "./middleware/error-handler": {}
+  },
+  "final:after": {
+    "strong-error-handler": {
+      "params": {
+        "debug": false,
+        "log": false
+      }
+    }
+  }
+}
