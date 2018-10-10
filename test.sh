@@ -25,7 +25,7 @@ pkill -f yarn;
 sleep 5;
 
 echo LoopBack 4 >> results.txt
-cd src/lb4/ts && yarn && yarn start & sleep 5;
+cd src/lb4/ts && yarn && yarn start & sleep 10;
 ./perf.sh ${COUNT} localhost 3000 POST welcome '{"foo":"bar"}' | tail -n6 >> results.txt
 pkill -f yarn;
 sleep 5;
