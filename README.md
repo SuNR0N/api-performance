@@ -126,7 +126,17 @@ yarn start
 
 ## Script
 
+Runs the performance test against the given server instance by initiating HTTP requests with `curl`:
+
 ```sh
 chmod +x perf.sh
 ./perf.sh <number_of_requests> <host> <port> <http_method> <api_path> [data]
+```
+
+Runs the performance tests against all servers in a sequence and logs the results into `results.txt`:
+
+```sh
+chmod +x test.sh
+# Number of requests defaults to 10000 if omitted 
+./test.sh [number_of_requests]
 ```
